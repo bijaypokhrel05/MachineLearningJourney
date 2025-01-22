@@ -1,8 +1,9 @@
 # MachineLearningJourney
 ___
-From today onwards, I will make a notes and share ideas what I had learned. The resources and books that I had covered will be mentioned here.<br>
+From today onwards, I will make a notes and share ideas what I had learned. The resources and books that I had covered will be mentioned here.<br></br>
 
 <img src='images/title_image.jpg' width="450" height="250" />
+
 ___
 ## Syllabus to cover
 
