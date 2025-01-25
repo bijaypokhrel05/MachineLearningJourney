@@ -1,15 +1,15 @@
 # MachineLearningJourney
 ___
-From today onwards, I will make a notes and share ideas what I had learned. The resources and books that I had covered will be mentioned here.<br></br>
+From today onwards, I will make a notes and share ideas what I had learned. The resources and books that I had covered will be mention here.<br></br>
 
 <img src='images/title_image.jpg' width="450" height="250" />
 
 ___
 ## Syllabus to cover
 
-| S.N. | Resources and Books                                                                                   | Status |
-|------|-------------------------------------------------------------------------------------------------------|--------|
-| 1.   | [Advance Learning Algorithm](https://www.coursera.org/learn/advanced-learning-algorithms/home/week/1) |        |
+| S.N. | Resources and Books                                                                                                                    | Status |
+|------|----------------------------------------------------------------------------------------------------------------------------------------|--------|
+| 1.   | [Machine Learning Specialization: Advance Learning Algorithm](https://www.coursera.org/learn/advanced-learning-algorithms/home/week/1) |        |
 
 ___
 ## Projects
@@ -57,12 +57,55 @@ I gained how neural network model are design and understand some important notat
 
 - As you can see, `a^[1]` becomes the input to layer **2**. So, the input to layer **2** is the output of layer **1**. Generally, the ***input features*** will be the ***output vector*** from the previous layer.<br></br>
 - In above, there are 4 layers and `x` vector is input to neural network and not consider as an ***activation vector***. If we assume that `x` is an activation of layer **0** i.e. `a^[0]`. Then we can generalize that ***output of layer*** `l-1` (i.e. *previous layer*)<br></br>
-- Parameters `w` and `b` of layer `l`, unit `j`. In each particular layers, number of neurons (unit) contained. It's just like rows of matrix. And we denoted `j` for each neuron associate with `l` layer.
+- Parameters `w` and `b` of layer `l`, unit `j`. In each particular layers, number of neurons (unit) contained and denoted as ***subscript j***. It's just like rows of matrix. And we denoted `j` for each neuron associate with `l` layer and `l-1` layer's **activation function** is the input of layer `l`.
 
 ![Handwritten digit recognition](/images/handwritten-day2.png)
 
-I go through this [Notebook](/lab_session_1) and learn some *pytorch* stuff and understand how logistics and neural network distinguish.
+I go through this [Notebook](/lab_session_1) and learn some *Tensorflow and Keras* stuff and understand how logistics and neural network distinguish.
 
 ___
-## Day 3: 
+## Day 3: Build the model using Tensorflow
 
+> *One of the remarkable things about neural network is the same algorithm can be applied to so many different application.*
+
+Today, I look about how tensorflow and numpy array distinguish. Inorder to build the model let's first understand how tensorflow and numpy works.
+
+![Day 3 tensorflow](/images/day_3_note_tf_np.png)
+
+- Numpy was first created and becomes a standard library for linear algebra in Python.<br>
+- In above, we can see that matrices can be represented in rows and columns form. And numpy array can help to achieve representation of matrix.<br>
+- This numpy array uses broadcasting, slicing which makes efficient for computation of matrix.<br>
+- Tensorflow and Numpy should be used wisely because they contain similar type of workflow and makes us illusion.
+
+![Day 3 tensorflow 1](/images/day_3_tensorflow1.png)
+
+![Day 3 tensorflow 2](/images/day_3_activation_vector.png)
+**Tensorflow** is a machine learning package developed by Google. In 2019, Google integrated Keras into Tensorflow and released Tensorflow 2.0. Keras is a framework developed independently by François Chollet that creates a simple, layer-centric interface to Tensorflow.
+
+- In order to use the Dense object we should import some packages.
+```python
+from tensorflow.keras import Dense
+```
+
+- ***Dense*** is another name for the layers of a neural network that we've learned about so far. As we learn more about neural network, we learn about other types of layers as well.<br></br>
+- A **tensor** here is a datatype that the **Tensorflow** team had created inorder to store and carry out computational on matrices efficiently. So, whenever you see tensor just think of the matrix on these few slides.Technically, a tensor is a little bit more general than the matrix.<br></br>
+- We can convert the tensor into numpy as you can see in  below code:
+```python
+x = np.array([[200.0, 17.0]])
+layer_1 = Dense(units=3, activation='sigmoid')
+a1 = layer_1(x)
+
+# We can convert the tensor object into teh numpy
+a1.numpy()   # Output: array([[0.2, 0.7, 0.3]], dtype=float32)
+```
+- Return it in the form of numpy rather than in the form of ***tensorflow array*** or ***Tensorflow matrix***.
+
+So, we collect some of the basic information. We are ready to discuss the model implementation. See the code of *digit classification model* in picture below:
+
+![Full implementation](/images/day_3_full_implementation.png)
+
+- Firstly, created a layers that we needed to design a model and using ***sequential*** object of Tensorflow, ***compile*** we can fit and predict easily. However, I haven't explained details of above mention objects and will understand in further session. 
+
+[Notebook of Today](/week_1_lab_session/C2_W1_Lab02_CoffeeRoasting_TF.ipynb)
+___
+## Day 4: 
