@@ -154,7 +154,7 @@ def sequential(x):
 ### AGI: Artificial General Intelligence
 ![Day 4](/images/day_4_agi_ani.png)
 
-I feel AI is superior but looking above makes broaden my thinking. **AGI** stands for ***Artificial General Intelligence*** which is much more complex as human brain. In today, we only focus to solve one particular problem but if we can generalize it (i.e. *can solve any type of problem like human*). This concept fascinates me and learned more about it further.
+I feel AI is superior but looking above makes broaden my thinking. **AGI** stands for ***Artificial General Intelligence*** which is much more complex as human brain. In today, we only focus to solve one particular problem but if we can generalize it (i.e. *can solve any type of problem like human*). This concept fascinates me and will learn more about that in upcoming days.
 
 By learning this much, I had completed my *week 1* from [Advance Learning Algorithm](https://www.coursera.org/learn/advanced-learning-algorithms/home/week/1) course. And from tomorrow onwards, I will enter to *week 2* learning journey. Stay tuned!
 ___
