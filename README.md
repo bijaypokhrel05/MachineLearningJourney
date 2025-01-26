@@ -66,7 +66,7 @@ I go through this [Notebook](/lab_session_1) and learn some *Tensorflow and Kera
 ___
 ## Day 3: Build the model using Tensorflow
 
-> *One of the remarkable things about neural network is the same algorithm can be applied to so many different application.*
+> *"One of the remarkable things about neural network is the same algorithm can be applied to so many different application."*
 
 Today, I look about how tensorflow and numpy array distinguish. Inorder to build the model let's first understand how tensorflow and numpy works.
 
@@ -88,7 +88,7 @@ from tensorflow.keras import Dense
 ```
 
 - ***Dense*** is another name for the layers of a neural network that we've learned about so far. As we learn more about neural network, we learn about other types of layers as well.<br></br>
-- A **tensor** here is a datatype that the **Tensorflow** team had created inorder to store and carry out computational on matrices efficiently. So, whenever you see tensor just think of the matrix on these few slides.Technically, a tensor is a little bit more general than the matrix.<br></br>
+- A **tensor** here is a datatype that the **Tensorflow** team had created inorder to store and carry out computational on matrices efficiently. So, whenever you see tensor just think of the matrix on these above images.Technically, a tensor is a little bit more general than the matrix.<br></br>
 - We can convert the tensor into numpy as you can see in  below code:
 ```python
 x = np.array([[200.0, 17.0]])
@@ -108,4 +108,61 @@ So, we collect some of the basic information. We are ready to discuss the model 
 
 [Notebook of Today](/week_1_lab_session/C2_W1_Lab02_CoffeeRoasting_TF.ipynb)
 ___
-## Day 4: 
+## Day 4: Implementation of Forward Propagation from Scratch
+
+Today, from Coursera's [Machine Learning Specialization](https://www.coursera.org/learn/advanced-learning-algorithms/home/week/1) I had explored the important concept and after that I dived into the scratch implementation of neural network. All the coding stuff and core concepts from today session are mention below:
+
+- **Core Concept:** ***Forward*** and ***backward propagation*** are the core mechanics that allow the network to learn from data and improve its performance over time.
+    - **Forward propagation** is where the network makes a guess based on input.
+    - **Backward Propagation** is where the network learns from its mistake by adjusting how it makes those guesses.<br></br>
+- These steps happen over and over, and each time, the network gets better at making accurate predictions. However, I had implemented ***forward prop*** only for today and another will be covering later on this specialization.
+
+![Day 4 scratch implementation](/images/Day_4_from_scratch.png)
+
+The picture shows how we can actually implement neural network using numpy only but *quite lengthier*. Although, we don't perform like this in ***production level***. There are different framework such as ***tensorflow*** and ***pytorch***. These ***frameworks*** make our works easier. But to be a good machine learning engineer it's a good practice to have scratch implementation of any algorithm so that can help us in ***debugging***.
+
+![Day 4 Forward prop](/images/day_4_forward_prop.png)
+
+To make task easier, I had mentioned code below:
+```python
+import numpy as np
+
+# Let's define sigmoid function
+def g(z):
+  return  1/(1+np.exp(-z))
+
+# Also define a dense function
+def dense(a_in, W, b):
+    units = W.shape[1]
+    a_out = np.zeros(units)
+    for j in range(units):
+        w = W[:, j]
+        z = np.dot(w, a_in) + b[j]
+        a_out = g(z)
+    return a_out
+
+# Definition of sequential function
+def sequential(x):
+    a1 = dense(x, W1, b1)
+    a2 = dense(a1, W2, b2)
+    a3 = dense(a2, W3, b3)
+    a4 = dense(a3, W4, b4)
+    f_x = a4
+    return f_x
+```
+
+### AGI: Artificial General Intelligence
+![Day 4](/images/day_4_agi_ani.png)
+
+I feel AI is superior but looking above makes broaden my thinking. **AGI** stands for ***Artificial General Intelligence*** which is much more complex as human brain. In today, we only focus to solve one particular problem but if we can generalize it (i.e. *can solve any type of problem like human*). This concept fascinates me and learned more about it further.
+
+By learning this much, I had completed my *week 1* from [Advance Learning Algorithm](https://www.coursera.org/learn/advanced-learning-algorithms/home/week/1) course. And from tomorrow onwards, I will enter to *week 2* learning journey. Stay tuned!
+___
+## Day 5: 
+
+
+
+
+
+
+
