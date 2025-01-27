@@ -158,9 +158,28 @@ I feel AI is superior but looking above makes broaden my thinking. **AGI** stand
 
 By learning this much, I had completed my *week 1* from [Advance Learning Algorithm](https://www.coursera.org/learn/advanced-learning-algorithms/home/week/1) course. And from tomorrow onwards, I will enter to *week 2* learning journey. Stay tuned!
 ___
-## Day 5: 
+## Day 5: Train Neural Network in Tensorflow
+In this specialization, I dived into *week 2* with the full implementation of neural network in **Tensorflow**. Again taking the **digit classification problem** and with ***systematic 3 steps***, we conclude our today updates.
 
+### 1. Create the model
+![Day 5 step 1](/images/Day_5_step2.png)
 
+Here, we define a model and import all the **tensorflow dependencies** as mention in above code. ***Sequential and Dense*** from *keras* will be helpful for efficient execution of program.
+
+### 2. Loss and Cost function
+![Day 5 step 2](/images/Day_5_step3.png)
+
+**Loss** can be different depending upon what type of problem you have taken. When you work on predicting numbers, then ***loss** will be ***mean squared error*** and similarly ***binary cross-entropy*** (also known as ***logistic loss***) is a way to measure how "wrong" or "right" the model was in its prediction, based on the actual truth (whether the email is actually spam or not).
+
+### 3. Gradient descent
+![Day 4 step 3](/images/Day_5_step1.png)
+
+Visualizing Loss function `J(w)` over weights `w` and compute the minimum value using partial derivatives concept. Where ***alpha*** should be taken in such a way that weight and bias for higher order must be smaller. ***Epochs*** is the number of steps in gradient descent.
+
+### Full implementation using Tensorflow
+![Day 4 complete implementation](/images/Day_5_complete_implementation.png)
+___
+## Day 6: 
 
 
 
