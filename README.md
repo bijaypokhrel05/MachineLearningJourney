@@ -185,7 +185,7 @@ ___
 They are explained below:
 
 ![Day 6 Type of activation](/images/Day_6_activation_func.png)
-![Day 6 activation](/images/DAy_6_activation_depth.pngs)
+![Day 6 activation](/images/DAy_6_activation_depth.png)
 - **Linear activation function** are the most general activation. Some people assume no use of activation during use of linear activation function. When we use to predict any numbers either -ve or +ve, linear activation function is useful.<br></br>
 - **ReLU(Rectified Linear Unit)** is the another most common activation function. Basically,when we need to predict the house price we use ReLU because price can't be in negative `ReLU = max(0, z)`. It is very efficient because of its simplicity and mostly used for the hidden layers.<br></br>
 - **Sigmoid** is the another popular activation function basically deals with the binary classification type of problem. Its discrete value ranges between 0 and 1. However, it is not suitable for the multi class classification problems such as handwritten digits recognition problem. For the multi class classification problem we have to use the softmax activation function because it is the generalize form of sigmoid function. Comparison between the logistics and softmax  and also cost difference is shown in below images.
