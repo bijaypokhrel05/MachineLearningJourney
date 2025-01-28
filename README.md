@@ -179,7 +179,36 @@ Visualizing Loss function `J(w)` over weights `w` and compute the minimum value 
 ### Full implementation using Tensorflow
 ![Day 4 complete implementation](/images/Day_5_complete_implementation.png)
 ___
-## Day 6: 
+## Day 6: Types of activation, softmax regression, multi-label classification
+
+**Activation function** plays a crucial role during modeling neural network. Activation function are heart of most machine learning model. Today, I dived into some of the important types of activation functions. 
+They are explained below:
+
+![Day 6 Type of activation](/images/Day_6_activation_func.png)
+![Day 6 activation](/images/DAy_6_activation_depth.pngs)
+- **Linear activation function** are the most general activation. Some people assume no use of activation during use of linear activation function. When we use to predict any numbers either -ve or +ve, linear activation function is useful.<br></br>
+- **ReLU(Rectified Linear Unit)** is the another most common activation function. Basically,when we need to predict the house price we use ReLU because price can't be in negative `ReLU = max(0, z)`. It is very efficient because of its simplicity and mostly used for the hidden layers.<br></br>
+- **Sigmoid** is the another popular activation function basically deals with the binary classification type of problem. Its discrete value ranges between 0 and 1. However, it is not suitable for the multi class classification problems such as handwritten digits recognition problem. For the multi class classification problem we have to use the softmax activation function because it is the generalize form of sigmoid function. Comparison between the logistics and softmax  and also cost difference is shown in below images.
+
+![Day 6 softmax implementation](/images/Day_6_logistics_softmax_cmpr.png)
+![Day 6 softmax logistic cost](/images/Day_6_softmax_log_cost.png)
+
+### Multi-class classification and softmax
+**Multi-class classification** is a type of machine learning problem where the goal is to categorize data into one of more than two possible classes. For example, classifying an image as either a dog, cat, or bird is a multiclass problem because there are multiple categories (classes) to choose from.
+
+**Softmax** is a _mathematical_ _function_ that helps solve this by turning the output of a model (which could be raw scores or **_logits_**) into probabilities. It does this by taking the scores and exponent them, and then _**normalizing**_ them so that the sum of all **_probabilities equals 1_**. This way, each class has a **_probability_**, and the class with the highest probability is chosen as the model’s prediction.
+
+**In short**: **_Softmax_** helps in multiclass classification by converting model outputs into understandable **_probabilities_** for each class. The class with the highest probability is selected as the predicted class.
+
+![Day 6 MNIST with softmax](/images/Day_6_mnits_with_softmax.png)
+The above image show the full implementation of neural network with the **MNIST** datasets using softmax. However, **Andrew Ng** doesn't recommend us to use it because of not so accurate decimal values. Instead use it after certain modification is done. Some of the modification is highlighted in below image.
+
+![Day 6](/images/Day_6_complete_accurate_implementation.png)
+Some changes are output layer's activation changes to ***linear*** and instead of using loss as ***binarycrossentropy***, we use ***SparseCategoricalCrossentropy***. These modification helps to achieve with the more numerically accurate results.
+
+___
+## Day 7: 
+
 
 
 
