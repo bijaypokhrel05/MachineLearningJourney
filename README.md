@@ -10,6 +10,7 @@ ___
 | S.N. | Resources and Books                                                                                                                    | Status |
 |------|----------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 1.   | [Machine Learning Specialization: Advance Learning Algorithm](https://www.coursera.org/learn/advanced-learning-algorithms/home/week/1) |        |
+| 2.  | [Neural Network Playlist fron 3Blue1Brown](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)        |   |
 
 ___
 ## Projects
@@ -207,7 +208,30 @@ The above image show the full implementation of neural network with the **MNIST*
 Some changes are output layer's activation changes to ***linear*** and instead of using loss as ***binarycrossentropy***, we use ***SparseCategoricalCrossentropy***. These modification helps to achieve with the more numerically accurate results.
 
 ___
-## Day 7: 
+## Day 7: Convolution Layer, Backward propagation
+### Additional Neural Network concept
+In ***Dense layer*** , each neuron output is a function of all the activation outputs of the previous layer. While in case of ***Convolution layer***, each neuron only looks at part of the previous layer's output.
+
+![Day 7 convolution layers](/images/Day_7_convolution_layer.png)
+### Why convolution layers?
+- **Faster computation**
+- **Need less training data**
+- **Less prone to overfitting**
+
+### Gradient Descent - Backward propagation
+![Day 7 backward propagation](/images/Day_7_backward_prop.png)
+Gradient descent requires the derivative of the cost with respect to each parameter in the network. Neural networks can have millions or even billions of parameters. The back propagation algorithm is used to compute those derivatives. Computation graphs are used to simplify the operation. 
+
+#### Computation Graph
+A computation graph simplifies the computation of complex derivatives by breaking them into smaller steps. And if you want to visualize more deep into the backward propagation, then this graph concept provide you with better intuition.
+
+In this *week 2*, I had learned about the different type of activation function, training details and multi-class classification, backward propagation details. And from tomorrow onward, I will jump to *week 3* on Coursera's [Advance Learning Algorithm](https://www.coursera.org/learn/advanced-learning-algorithms/home/week/2).
+
+___
+## Day 8: 
+
+
+
 
 
 
