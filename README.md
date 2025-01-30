@@ -2,7 +2,7 @@
 ___
 From today onwards, I will make a notes and share ideas what I had learned. The resources and books that I had covered will be mention here.<br></br>
 
-<img src='images/title_image.jpg' width="450" height="250" />
+![Title image](/images/title_images.jpg)
 
 ___
 ## Syllabus to cover
@@ -228,7 +228,26 @@ A computation graph simplifies the computation of complex derivatives by breakin
 In this *week 2*, I had learned about the different type of activation function, training details and multi-class classification, backward propagation details. And from tomorrow onward, I will jump to *week 3* on Coursera's [Advance Learning Algorithm](https://www.coursera.org/learn/advanced-learning-algorithms/home/week/2).
 
 ___
-## Day 8: 
+## Day 8: Evaluating a Model
+With short learning, I started a new *week 3* session from today. I learnt about how we can evaluate our model. Due to imbalance datasets, it is very difficult to generalize our model to new data. However, we manage low biases during the training process. But cross validation and `KFold` helps us to reduce the overfitting problem.
+
+### Diagnostic:
+A test that you run to gain insight into what is/isn't working with a learning algorithm, to gain guidance into improving its performance.
+
+![Day 8 evaluating model](/images/Day_8_evalutating_model.png)
+
+In above, to determine the mean squared error metric we will not include the regularization term.
+
+![Day 8 model selection](/images/Day_8_model_selection.png)
+All the details are shown in the above picture, we can easily understand.
+
+![Day 8 choosing model](/images/Day_8_choosing_model.png)
+
+![Day 8 performance](/images/Day_8_performance.png)
+
+___
+## Day 9:
+
 
 
 
