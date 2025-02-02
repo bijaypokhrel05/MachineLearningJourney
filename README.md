@@ -246,7 +246,18 @@ All the details are shown in the above picture, we can easily understand.
 ![Day 8 performance](/images/Day_8_performance.png)
 
 ___
-## Day 9:
+## Day 9: Bias and Variance
+Today, I learnt about bias and variance concept which is a crucial part of the machine learning cycle. In machine learning, **bias** and **variance** are two sources of error that affect how well your model performs. _The goal is to find the right balance_.
+
+![Day 9 bias variance](/images/Day_9_bias_variance.png)
+
+* **Too much bias**: Your model is underfitting and missing important patterns.
+* **Too much variance**: Your model is overfitting and capturing noise instead of the true signal.
+
+By understanding bias and variance, you **_can tweak your model_** to make it more **_accurate_** and **_reliable_**!
+___
+## Day 10: 
+
 
 
 
