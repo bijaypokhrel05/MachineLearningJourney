@@ -247,7 +247,7 @@ All the details are shown in the above picture, we can easily understand.
 
 ___
 ## Day 9: Bias and Variance
-Today, I learnt about bias and variance concept which is a crucial part of the machine learning cycle. In machine learning, **bias** and **variance** are two sources of error that affect how well your model performs. _The goal is to find the right balance_.
+Today, I learnt about **bias** and **variance** concept which is a crucial part of the machine learning cycle. In machine learning, **bias** and **variance** are two sources of error that affect how well your model performs. _The goal is to find the right balance_.
 
 ![Day 9 bias variance](/images/Day_9_bias_variance.png)
 
@@ -256,7 +256,34 @@ Today, I learnt about bias and variance concept which is a crucial part of the m
 
 By understanding bias and variance, you **_can tweak your model_** to make it more **_accurate_** and **_reliable_**!
 ___
-## Day 10: 
+## Day 10: Bias and variance with varying lambda, Learning Curve
+Today, I delved into understanding the fundamental that every ML engineer should know. While varying _regularization parameter_ i.e. ***lambda***, what differences can occur in bias and variance.
+
+![Day 10 bias and variance cv](/images/Day_10_bias_variance_while_lambda_changes.png)
+- In above figure, **CV** stands for _**cross validation**_ is a sampling technique. It helps in estimating how well the model will perform on an independent dataset.
+- Also, shows the two curves which are exactly mirror of both. They show that while varying ***lambda*** and ***degree of polynomial***, how loss function of **train** and **cv** makes their behavior.
+
+![Day 10 bias and variance](/images/Day_10_bias_variance_while_lambda_changes1.png)
+- As we can see that when lambda is taken as larger value, the algorithm is highly motivated to keep these `w` very small and so you end up with `w1`, `w2` and really all parameters will be very close to zero.<br></br>
+
+- Similarly, when lambda is taken small, it means no regularization term. So we're just fitting the fourth order polynomial. We end up with that curve that you saw in the above picture. Then model will have high variance (**overfit**) because it fit all the training data and fail to generalize new data.<br></br>
+- And in middle of the above picture, is the more generalize case and have intermediate _**lambda**_ value. Where loss function of both **cv** and **train** has smaller magnitude.
+
+### Learning Curve
+![Day 10 learning curve](/images/Day_10_learning_curves.png)
+
+**Learning curves** helps in diagnosing underfit and overfit in machine learning model. It is a graphical representation of how a model's performance changes over time as it learns from more data or as the training progresses. Let's dive in graphical views of **high bias** and **high variance** cases:
+- **High bias**
+
+![Day 10 learning curve with high bias](/images/Day_10_learning_curve_with_high_bias.png)
+
+- **High variance**
+
+![Day 10 learning curve with high variance](/images/Day_10_learning_curves_with_high_variance.png)
+- A **high training loss** indicates the model doesn't fit the data correctly.
+- A **high testing loss** indicates the model doesn't generalize well.
+___
+## Day 11:
 
 
 
