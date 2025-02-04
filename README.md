@@ -283,9 +283,35 @@ Today, I delved into understanding the fundamental that every ML engineer should
 - A **high training loss** indicates the model doesn't fit the data correctly.
 - A **high testing loss** indicates the model doesn't generalize well.
 ___
-## Day 11:
+## Day 11: Neural Network's Bias and Variance, ML Development Process and Data Augmentation
+> Someone said that "*After a lot of work experience in a few different companies, he realized that bias and variance is one of those concepts that takes a short time to learn, but takes a lifetime to master*".
+
+### Neural Network and Bias-Variance Tradeoff
+![Day 11 bias variance tradeoff](/images/Day_11_bias_variance_tradeoff.png)
+In above, we have to balance the complexity that is the **degree of polynomial** or **regularization parameter lambda**. But it turns out that neural network offer us a way out of this dilemma of having tradeoff bias and variance with some caveats.
+- **When you increase the complexity of a neural network** (e.g., adding more layers or neurons), **bias typically decreases** (the model becomes more capable of capturing complex patterns), but **variance increases** (the model becomes more prone to overfitting).<br></br>
+
+- **When you decrease the complexity of a neural network, bias increases** (the model becomes too simple to capture complex patterns), but **variance decreases** (the model becomes less sensitive to the training data and more robust to noise).<br></br>
+
+![Day 11 neural network bias - variance](/images/Day_11_neural_network_bias_variance.png)
+- Large neural network are low bias machines. This above images show the clear ideas behind the neural network's bias and variance. 
+
+### Machine Learning Development Process
+![Day 11 ml development process](/images/Day_11_ml_development_process.png)
+
+The iterative nature of machine learning development revolves around **trial** and **error**, **continuous learning, and improvement**. Through experimentation, **error analysis**, and **constant refinements**, machine learning models can be progressively optimized. This iterative approach, combined with **solid data** and **model evaluation**, is central to building successful machine learning applications.
 
 
+### Data Augmentation
+![Day 11 data augmentation](/images/Day_11_data_augmentation.png)
+
+Beyond getting brand new training example `(x, y)`, there's another technique that's widely used especially for images and audio data that can increase your training set size significantly called as **data augmentation**. Creating additional examples like this hold the learning algorithm, do a better job learning how to recognize the letter A in above figure. Learnt some of the important topics related to data augmentation:
+
+- **Data augmentation by introducing distortions**.
+- **Data augmentation for speech recognition**.
+
+___
+## Day 12: 
 
 
 
