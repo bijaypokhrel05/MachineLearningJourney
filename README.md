@@ -311,13 +311,69 @@ Beyond getting brand new training example `(x, y)`, there's another technique th
 - **Data augmentation for speech recognition**.
 
 ___
-## Day 12: 
+## Day 12: Synthesis Data, Engineering Data, Deployment, Classification Metrics
+
+Today, I learnt about the **synthesis data**. **Synthesis data** are the artificial data develop to increase the performance of the model. Basically, using artificial data inputs to create a new training example. All other learning updates are mention below:
+
+### Engineering Data
+Most machine learning researchers attention was on the **_conventional model centric approach_**. You can take the reference in below image:
+
+![Day 12 engineering data](/images/Day_12_engineering_data.png)
+
+A **machine learning system** or an **AI system** includes both code to implement your model, the data that you train the algorithm model as well. And over the last few decades, most researchers doing **_machine learning research would download the dataset and hold the data fixed_** while they focus on improving the code or the algorithm or the model. Sometimes it can be more fruitful to spend more of your time taking a data centric approach in which you focus on engineering the data used by your algorithm.
 
 
+### Full cycle of a machine learning project
+![Day 12 ML cycle](/images/Day_12_ML_cycle.png)
+
+The figure illustrates the **full cycle of a machine learning project**, which consists of four key stages:
+
+1. **Scope Project (Define project)**:  
+   - This step involves defining the problem you are trying to solve and determining the project's objectives.  
+   - Key questions addressed here include: What is the goal of the project? What business or research problem are you solving? What will success look like?<br></br>
+
+2. **Collect Data (Define and collect data)**:  
+   - In this stage, relevant data is identified, collected, and prepared for use.  
+   - Data may be sourced from databases, APIs, manual collection, or other means. Data cleaning and preprocessing (e.g., handling missing values, normalization) are also part of this step.<br></br>
+
+3. **Train Model (Training, error analysis & iterative improvement)**:  
+   - The collected data is used to train machine learning models.  
+   - Error analysis is performed to evaluate model performance and identify potential improvements.  
+   - Iterative refinement and tuning (e.g., hyperparameter optimization, feature engineering) take place to achieve better accuracy and reliability.<br></br>
+
+4. **Deploy in Production (Deploy, monitor, and maintain system)**:  
+   - Once the model is ready, it is deployed into a production environment where it serves real-world tasks.  
+   - Monitoring and maintaining the deployed model is essential to ensure consistent performance, including adapting to changes in data patterns or requirements.
+
+The arrows between the stages indicate that this cycle is **iterative**—you may need to revisit earlier steps based on results or new requirements (e.g., refining the project scope, collecting additional data, or retraining the model). This ensures continuous improvement and adaptation to changing conditions.
+
+### Deployment
+The **deployment model** is the process of integrating a trained machine learning model into a production environment where it can deliver predictions or decisions in real-world applications. Below image show detail about deployment:
+
+![Day 12 deployment model](/images/Day_12_deployment_model.png)
+
+In general term, there is a mediator called as **API** (Application Program Interface) between the inference server and mobile app / website. For the larger scale, we need a software engineer to meet the following objective:
+- Ensure reliable and efficient predictions.
+- Scaling
+- Logging
+- System monitoring
+- Model updates
+
+### Classification Metrics
+When our datasets contain an imbalanced data or **skewed data**, then accuracy fails to give proper idea. When positive labeled data contain 95% and false labeled data contain 5% which makes the **datasets imbalanced**. So, we can further move on other metrics calculation which will be beneficial for the imbalance dataset.
+Use metrics that give you a clearer picture, like:
+- **Confusion Matrix**: A table that shows how many predictions were correct, and where the model made mistakes.
+![Day 12 confusion matrix](/images/Day_12_precision_recall.png)
+
+- **Precision**: How many of the predicted positives were correct?
+- **Recall**: How many of the actual positives did the model catch?
+![Day 12 precision recall](/images/Day_12_precision_recall_1.png)
 
 
+- **F1-Score**: A balance of precision and recall. Below image gives us a crystal idea. 
+![Day 12 f1 score](/images/Day_12_f1_score.png)
 
 
-
-
-
+These metrics can help you understand the real performance of your model beyond just accuracy. With these learning I completed my *week 3* also. And will go on learning *week 4* stuff from tomorrow onwards.
+___
+## Day 13:
