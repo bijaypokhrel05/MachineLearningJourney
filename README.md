@@ -376,4 +376,17 @@ Use metrics that give you a clearer picture, like:
 
 These metrics can help you understand the real performance of your model beyond just accuracy. With these learning I completed my *week 3* also. And will go on learning *week 4* stuff from tomorrow onwards.
 ___
-## Day 13:
+## Day 13: Decision Tree
+Today, heading towards *week 4* of Coursera's [Advance Learning Algoritm](https://www.coursera.org/learn/advanced-learning-algorithms). I learnt about the **Decision Tree** concept. A **Decision Tree** is a supervised machine learning algorithm used for classification and regression tasks. It is a tree-like structure where each **_internal node_** represents a decision based on a feature, each branch represents an outcome of the decision, and each **leaf node** represents a final prediction (class label for classification or a numerical value for regression).
+
+![Day 13 decision tree](/images/Day_13_decision_tree.png)
+
+### Learning Process of Decision Tree
+Two most important decision we must consider and those decisions are mention below:
+- **Decision 1**: How to choose what features to split on at each node?
+- **Decision 2**: When do you stop splitting?
+![Day 13 learning process](/images/Day_13_learning_process.png)
+
+Also revisited neural network concept and practice lab session. I will learn deeper from tomorrow on this decision tree topics. 
+___
+## Day 14:
