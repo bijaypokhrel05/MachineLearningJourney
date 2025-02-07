@@ -389,4 +389,26 @@ Two most important decision we must consider and those decisions are mention bel
 
 Also revisited neural network concept and practice lab session. I will learn deeper from tomorrow on this decision tree topics. 
 ___
-## Day 14:
+## Day 14: Entropy and Information Gain
+**Note:**
+> _Programmatically speaking, decision tree are nothing but a giant structure of nested if-else condition._
+
+> _Mathematically speaking, decision tree use hyperplanes which run parallel to any one of the axes to cut your coordinate system into hyper cuboids._
+
+Today, I dived into the important concept that we have to considered while building the **Decision tree** model. 
+
+### Entropy
+![Day 14 entropy](/images/Day_14_entropy.png)
+
+Basically, **entropy** is just measure of **_disorder/impurity_**. As you can see that **entropy** has the parabolic curve with open downwards and has maximum value of `H(p1) = 1` at the middle of the curve. For better intuition, there is the maximum variation of data at middle. And **low entropy** found when `p1 = 0.0 and p1 = 1.0`. It means only one category found on the **low entropy** instances. In above, `p1` denotes as fraction of examples that are positive. Here, **positive** means what you are trying to infer.
+
+### Information Gain
+![Day 14 information gain](/images/Day_14_information_gain.png)
+
+Here, each split of training data should calculate entropy. It doesn't give us an **_average idea_** what feature to choose for the better prediction. So, here's **information gain** comes into picture. **Information gain** generally measure reduction of entropy. As we know that **_entropy_** and **_information gain_** are inversely proportional to each other. Information gain is also known as knowledge. More variation of data gives poor knowledge about our dataset.
+
+### One-Hot Encoding
+Also explored about the one hot encoding technique which plays vital role when our category contains more than two discrete values. Generally, machine learning frameworks not able to perform on categorical data. So, this encoding technique helps to convert our **_nominal_** data into binary form to distinguish each datapoints easily.
+
+___
+## Day 15: 
