@@ -400,7 +400,7 @@ Today, I dived into the important concept that we have to considered while build
 ### Entropy
 ![Day 14 entropy](/images/Day_14_entropy.png)
 
-Basically, **entropy** is just measure of **_disorder/impurity_**. As you can see that **entropy** has the parabolic curve with open downwards and has maximum value of `H(p1) = 1` at the middle of the curve. For better intuition, there is the maximum variation of data at middle. And **low entropy** found when `p1 = 0.0 and p1 = 1.0`. It means only one category found on the **low entropy** instances. In above, `p1` denotes as fraction of examples that are positive. Here, **positive** means what you are trying to infer.
+Basically, **entropy** is just measure of **_disorder/impurity_**. As you can see that **entropy** has the parabolic curve with open downwards and has maximum value of `H(p1=0.5) = 1` at the middle of the curve. For better intuition, there is the maximum variation of data at middle. And **low entropy** found when `p1 = 0.0 and p1 = 1.0`. It means only one category found on the **low entropy** instances. In above, `p1` denotes as fraction of examples that are positive. Here, **positive** means what you are trying to infer.
 
 ### Information Gain
 ![Day 14 information gain](/images/Day_14_information_gain.png)
@@ -411,4 +411,45 @@ Here, each split of training data should calculate entropy. It doesn't give us a
 Also explored about the one hot encoding technique which plays vital role when our category contains more than two discrete values. Generally, machine learning frameworks not able to perform on categorical data. So, this encoding technique helps to convert our **_nominal_** data into binary form to distinguish each datapoints easily.
 
 ___
-## Day 15: 
+## Day 15: Ensemble Tree, Random Forest, XGBoost
+Learnt about the ensemble tree concept. Although, we have already a decision tree algorithm then why we need ensemble tree? Here, a single decision tree is highly sensitive to small changes into data. Due to this limitation, ensemble tree algorithm comes into picture. Simply, a multiple collection of decision tree is ensemble tree. This makes our model less sensitive and making our algorithm more robust.
+_**The key idea is that an ensemble of trees works better than an individual tree by averaging their predictions (in regression) or using a majority vote (in classification).**_
+
+### Random Forest
+**Random Forest** is a powerful tree ensemble method that builds multiple decision trees and combines their predictions to improve **_accuracy and reduce overfitting_**.
+
+![Day 15 randomizing feature](/images/Day_15_randomizing_feature.png)
+
+**_Key Features of Random Forest:_**
+* Uses bagging (**_Bootstrap Aggregation_**): Each tree is trained on a random subset of the data.
+* Uses feature randomness: Each split in a tree considers a random subset of features.
+* Final prediction is made by majority voting (classification) or averaging (regression).
+* Handles missing data and high-dimensional datasets well.
+* Reduces overfitting compared to a single decision tree.
+
+### XGBoost
+**XGBoost** (**_eXtreme Gradient Boosting_**) is a _**high-performance**_, **_scalable tree-based_** algorithm that improves upon traditional **_Gradient Boosting_** by being faster, more accurate, and optimized for large datasets.
+- ![Day 15 xgboost_summary](/images/Day_15_xgboot_summary.png)
+
+
+- ![Day 15 xgboost](/images/Day_15_xgboost_implement.png)
+
+**_Key Advantages of XGBoost_**
+*  Fast and efficient (optimized for speed and memory).
+* Prevents overfitting (L1 & L2 regularization).
+* Handles missing values and large datasets well.
+* Works for both classification & regression.
+
+**When to use decision tree and neural network**<br>
+All things are included into the images below:
+
+![Day 15 decide when to use](/images/Day_15_decide_when_to_use.png)
+
+After learning all these things, I completed _part 2_ of **Machine Learning Specialization** from the Coursera. And got certificate for completing this course.
+Here is the link of my accomplishment: 
+[Completion of Advanced Learning Algorithms](https://coursera.org/share/c025e849589bfe7bb13e7add219cfe64).
+___
+## Day 16: 
+
+
+
