@@ -449,7 +449,29 @@ After learning all these things, I completed _part 2_ of **Machine Learning Spec
 Here is the link of my accomplishment: 
 [Completion of Advanced Learning Algorithms](https://coursera.org/share/c025e849589bfe7bb13e7add219cfe64).
 ___
-## Day 16: 
+## Day 16: Optimizing Random Forest for Crop Prediction
+Today, I worked on optimizing Random Forest for crop prediction while improving training speed. Initially, RandomizedSearchCV took a long time to train, so I applied the following optimizations:
 
+- **Reduced Search Space** – Limited the range of hyperparameters to focus on the most impactful ones.
+- **Lowered n_estimators** – Used 50–150 trees instead of 500 to reduce computation.
+- **Limited max_depth** – Set maximum depth to 10–20 to prevent overfitting and speed up training.
+- **Decreased n_iter in RandomizedSearchCV** – Reduced it to 10 iterations for a faster search.
+- **Used n_jobs=-1** – Leveraged all CPU cores for parallel processing.
+- **Lowered Cross-Validation (cv=3)** – Reduced the number of folds to minimize training time.
 
+These improvements significantly **_reduced training time_** by 50-70% while still achieving good accuracy.
 
+Here's some of my code snippet in below:
+
+![Day 16 practice](/images/Day_16_practice_rf.png)
+
+![Day 16 rf 2](/images/Day_16_rf_2.png)
+
+![Day 16 rf 3](/images/Day_16_rf_3.png)
+
+See my code, points in my notebook:
+[Notebook For Random Forest](/Day_16_practice_rf)
+Also I had downloaded the dataset from the Kaggle.
+
+___
+## Day 17: 
