@@ -474,4 +474,49 @@ See my code, points in my notebook:
 Also I had downloaded the dataset from the Kaggle.
 
 ___
-## Day 17: 
+## Day 17: Unsupervised Learning
+I've been starting new topic which is beyond supervised learning. This course was designed by **Coursera's** co-founder **Andrew Ng** named as _**Machine Learning Specialization: Unsupervised Learning, Recommender system, Reinforcement Learning**_. This course is divided into three weeks. 
+### Topics to cover
+- **Unsupervised Learning**
+   - _**Clustering**_
+   - _**Anomaly detection**_
+- **Recommender Systems**
+- **Reinforcement Learning**
+
+However, I started Unsupervised Learning. **Unsupervised learning** is a type of machine learning where a model is **_trained on unlabeled data to discover hidden patterns, structures, or relationships_**. Unlike **supervised learning**, there are no **_predefined labels or target variables_**; the algorithm must infer the structure of the data on its own.
+
+### Key Characteristics of Unsupervised Learning
+* **No labeled data**: The model learns patterns without explicit supervision.
+* **Finds hidden structures**: Clusters similar data points or reduces dimensionality.
+* **Exploratory**: Used for understanding data distributions and trends.
+* **Commonly used for feature engineering**: Helps create meaningful features for supervised learning.
+
+
+<center><h3>Clustering</h3></center>
+
+![Day 17 clustering](/images/Day_17_clustering.png)
+
+**Clustering** is a fundamental technique in **unsupervised learning**, where the goal is to group data points into clusters based on their **similarities**. Since clustering is **unsupervised**, there are **no labeled outputs**, the algorithm discovers **inherent patterns** within the dataset.
+
+### K-Means Clustering
+K-Means is a method used to **group similar data points together into K clusters**.
+
+![Day 17 kmeans](/images/Day_17_k_means_clustering.png)
+
+1. **_Picking K random points as starting centers (centroids)_**.
+2. **_Assigning each data point to the nearest centroid_**.
+3. **_Updating the centroids by taking the average position of the points in each cluster._**
+4. **_Repeating the process until the clusters stop changing._**
+
+### Application of Clustering
+- Grouping similar news
+- DNA analysis
+- Astronomical data analysis
+
+___
+## Day 18: 
+
+
+
+
+
