@@ -514,9 +514,28 @@ K-Means is a method used to **group similar data points together into K clusters
 - Astronomical data analysis
 
 ___
-## Day 18: 
+## Day 18: Cost Function Optimization, Elbow Method
 
+### Cost Function Optimization
+In **unsupervised learning**, particularly in **K-means clustering**, the optimization process revolves around **_minimizing a cost function (distortion)_** that measure how well the clusters represent the data. The standard cost function for K-Means is the _**sum of squares (SSD)**_ between each data point and its assigned cluster centers. The cost function also called **inertia or with-cluster sum of squares (WCSS)** is defined in below images:
 
+![Day 18 optimization](/images/Day_18_optimization_distortion.png)
 
+- The objective of K-Means is to ***minimize this function by iteratively updating cluster assignments and centroids***.
+
+### Elbow Method
+The **Elbow Method** is a simple way to find the best **_number of clusters_** in K-Means. It works by measuring how much the data points in each cluster differ from their assigned center (called a centroid). The idea is:
+
+- If you use **too few clusters**, the points within a cluster will be very far apart, meaning the groups aren’t well-defined.
+- If you use **too many clusters**, each cluster will only have a few points, which isn’t useful.
+
+To find the best number of clusters (k), we calculate a cost function called **WCSS** (**Within-Cluster Sum of Squares**).
+
+![Day 18 elbow method](/images/Day_18_elbow_method.png)
+
+In this above figure, in K = 3, the curve not bending too much. So, we have three cluster formation.
+
+___
+## Day 19:
 
 
