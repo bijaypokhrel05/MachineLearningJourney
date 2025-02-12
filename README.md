@@ -536,6 +536,23 @@ To find the best number of clusters (k), we calculate a cost function called **W
 In this above figure, in K = 3, the curve not bending too much. So, we have three cluster formation.
 
 ___
-## Day 19:
+## Day 19: K-Means Clustering From Scratch in Python
+KMeans Clustering can be used with open-source library scikit-learn. But to know about the working from depth, we should gain scratch implementation of this algorithm. Although, I had used scikit-learn to create a clustering dataset. 
+
+![Day 19 make_blobs to create dataset](/images/Day_19_kmean_scratch_implement.png)
+
+In this code, I had created a 100 datapoints using `make_blobs` function. Here, number of clusters are two and also iterate for 100 times to come up with accurate cluster centroids. I design a class named as **KMeans**. I initialize the constructor with `n_centroids` and `max_iter`. And assign `centroids` with `None` initially. Inside a **KMeans** class, I had define three functions such as `fit_predict`, `assign_cluster` and `move_cluster`. `fit_predict` is our main function where all training actions comes apart. And remaining two are the helping function.
+- **assign_cluster:** In this section, I had find the **euclidean distances** for each datapoints from each cluster centroids. And find the minimum distances and assign its **index position** to the list named as `cluster_group`. `cluster_group` list consist of 100 elements. And lastly that function returns list of `cluster_group`.<br></br>
+- **move_cluster:** The function is defined with all datapoints and list of `cluster_group` which we had got from the `assign_cluster` function. I separated all records with respect to its centroids.Then, calculate mean and assign with new centroids and return that value.<br></br>
+- If you find the **old centroids** and **current centroids** remain same, then you can stop the iteration. Hence, with these brief ideas we can complete our scratch implementation of KMeans.
+Below in images, you can look how I came with idea.
+![Day 19 kmeans algo](/images/Day_19_scratch_implementation.png)
+
+Output is shown below:
+![Day 19 final output](/images/Day_final_output_kmeans.png)
+*Resources*: [CampusX](https://www.youtube.com/watch?v=MFraC1JObUo) - ***KMeans Clustering Algorithm From Scratch in Python***
+
+___
+## Day 20: 
 
 
