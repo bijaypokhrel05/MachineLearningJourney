@@ -549,10 +549,50 @@ Below in images, you can look how I came with idea.
 ![Day 19 kmeans algo](/images/Day_19_scratch_implementation.png)
 
 Output is shown below:
+
 ![Day 19 final output](/images/Day_final_output_kmeans.png)
+
 *Resources*: [CampusX](https://www.youtube.com/watch?v=MFraC1JObUo) - ***KMeans Clustering Algorithm From Scratch in Python***
 
 ___
-## Day 20: 
+## Day 20: Anomaly Detection
+**Anomaly Detection** is an **unsupervised learning** because anomalies are rare and labeled data is often unavailable. However, anomaly detection can also be approached using **supervised** and **semi-supervised** learning depending on the availability of labeled data.
+
+In other word, **Anomaly detection** refers to the process of identifying data points, events, or patterns that significantly deviate from the normal or expected behavior in a dataset. These anomalies, also known as **_outliers_**, can indicate **_critical insights_**, such as **_fraud_**, **_system failures_**, **_cyber intrusions_**, or **_rare events_**. Some of the examples are shown in below images.
+
+![Day 20 anamoly detection](/images/Day_20_anamoly_detection.png)
+
+### Density Estimation
+Before diving deeper into **anomaly detection** we should first understand about the **density estimation**. Studying **density estimation** first helps build intuition about what is **_normal_**, how **_anomalies stand out_**, and how **_models can identify them_**.
+
+![Day 20 density estimation](/images/Day_20_density_estimation.png)
+
+- **Density estimation** is the process of determining a probability distribution from a given dataset. It aims to estimate the **probability density function (PDF)** of a **_continuous random variable_** without assuming a predefined distribution. So, let's discuss a well known normal distribution below which a **parametric density estimation**.
+
+### Normal (Gaussian) Distribution
+![Day 20 normal distribution](/images/Day_20_normal_distribution.png)
+
+**Normal distribution** is one of the most important probability distributions we'll learn about since a countless number of statistical methods rely on it. It applies to more real-world situations than  other distributions. Its shape is like **bell curve** as shown in above picture. 
+
+**Important properties**
+- It's symmetrical so left side is a mirror image of the right.
+- **_The area beneath the curve is 1_**. `(Area =1)`
+- The probability never hits `0`, even if it looks like it does at the **_tail ends_**.
+- Describe by **_mean_** and **_standard deviation_**.
+
+When a normal distribution has **_mean_** `0` and **_standard deviation_** of `1`, it's a special distribution called the _**standard normal deviation**_. As it's illustrated into below image.
+
+![Day 20 variation with mean and std](/images/Day_20_variation_with_mean_std.png)
+
+In above, if mean changes the position then curve will shift and increases in standard deviation makes the curve flat. And **squeezes of curve** when the **_standard deviation_** tends to decrease. With these **statistical ideas** we are good to go with the anomaly detection algorithm. Tomorrow, I'll explore the **algorithm of anomaly detection**.
+
+___
+## Day 21: 
+
+
+
+
+
+
 
 
