@@ -587,8 +587,22 @@ When a normal distribution has **_mean_** `0` and **_standard deviation_** of `1
 In above, if mean changes the position then curve will shift and increases in standard deviation makes the curve flat. And **squeezes of curve** when the **_standard deviation_** tends to decrease. With these **statistical ideas** we are good to go with the anomaly detection algorithm. Tomorrow, I'll explore the **algorithm of anomaly detection**.
 
 ___
-## Day 21: 
+## Day 21: Anomaly Detection Algorithm
+**Gaussian distribution** is the crucial part for this algorithm. There is a value called **_epsilon_**. If pdf of normal distribution is less than **_epsilon_** then algorithm detected anomaly and if pdf is greater than epsilon then the detected point is **normal** (**non-anomalous**). First of all, we need to take all the normal datapoints while training model because it contains skewed data. However, there could be a misconception between **anomaly detection** and **supervised learning**. So, if our dataset split into the ratio of 99:1 then that problem would be anomalous detection. If dataset split into nearly equal proportion then obviously we should choose supervised classification model. Let's look out into more mathematical and stepwise algo in image below:
 
+![Day 21 anomaly algorithm](/images/Day_21_anomaly_algorithm.png)
+
+Taking two features and utilizing algorithm, we can clearly see into the image below:
+- ![Day 21 example based on anomaly](/images/Day_21_anomaly_detection_example.png)
+
+
+- ![Day 21 aircraft example](/images/Day_21_anomaly_aircraft_example.png)
+
+However, in real-world it is impossible to find well known distribution such as **_Gaussian distribution_**. But we can achieve that known distribution with feature transformation.
+![Day 21 feature transformation](/images/Day_21_features_transformation.png)
+
+___
+## Day 22: 
 
 
 
