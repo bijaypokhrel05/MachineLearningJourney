@@ -602,8 +602,26 @@ However, in real-world it is impossible to find well known distribution such as 
 ![Day 21 feature transformation](/images/Day_21_features_transformation.png)
 
 ___
-## Day 22: 
+## Day 22: Collaborative Filtering
+Yesterday, I had completed _week 1_ from the last part of **Machine Learning Specialization**. And today, I explored the recommended system. Learn about the collaborative filtering, regularization term and gradient descent in recommender systems.
 
+![Day 22 collaborative filtering](/images/Day_22_colaborative_filtering_mathematics.png)
+
+**Collaborative Filtering** is a technique used in **recommendation systems** that predicts user preferences by analyzing **_past interactions_** and **_similarities between users_** or items. It assumes that similar users or items will have similar preferences.
+
+Below images show about the movie recommendation system. This image show the scratch implementation. Although, mathematical formulae coincides with linear regression.
+![Day 22 recommendation system](/images/Day_22_collaborative.png)
+
+![Day 22 collaborative notation](/images/Day_22_collaborative_notation.png)
+Above shows the notation used for movie recommendation in image.
+
+![Day 22 cost function](/images/Day_22_cost_function_of_recommender.png)
+Included the regularization term same as linear ridge regression.
+
+![Day 22 gradient descent](/images/Day_22_collaborate_gradient_descent.png)
+
+___
+## Day 23: 
 
 
 
