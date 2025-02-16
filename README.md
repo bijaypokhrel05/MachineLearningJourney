@@ -7,10 +7,13 @@ From today onwards, I will make a notes and share ideas what I had learned. The 
 ___
 ## Syllabus to cover
 
-| S.N. | Resources and Books                                                                                                                    | Status |
-|------|----------------------------------------------------------------------------------------------------------------------------------------|--------|
-| 1.   | [Machine Learning Specialization: Advance Learning Algorithm](https://www.coursera.org/learn/advanced-learning-algorithms/home/week/1) |        |
-| 2.  | [Neural Network Playlist fron 3Blue1Brown](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)        |   |
+| S.N. | Resources and Books                                                                                                                                                                          | Status |
+|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-|
+| 1.   | [**Machine Learning Specialization: Advance Learning Algorithm**](https://www.coursera.org/learn/advanced-learning-algorithms/home/week/1)                                                   |![✔️](https://img.shields.io/badge/Status-Completed-brightgreen)
+ |
+| 2.   | [**Machine Learning Specialization: Unsupervised Learning, Recommenders, Reinforcement Learning**](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning) | |
+| 3.   | [**Neural Network Playlist from 3Blue1Brown**](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)                                                          | ![✔️](https://img.shields.io/badge/Status-Completed-brightgreen)
+|
 
 ___
 ## Projects
@@ -621,8 +624,33 @@ Included the regularization term same as linear ridge regression.
 ![Day 22 gradient descent](/images/Day_22_collaborate_gradient_descent.png)
 
 ___
-## Day 23: 
+## Day 23: Mean Normalization, Tensorflow Implementation of Recommendation System
+In recommendation systems, **Collaborative Filtering** works by predicting user preferences based on the preferences of similar users. However, different users have different rating scales. **Mean normalization** helps **_remove these biases and improve similarity calculations_**.
+![Day 23 mean normalization](images/Day_23_mean_normalization.png)
 
+**Why Use Mean Normalization?**
+- Different users rate items on different scales.
+- Some users may give high ratings to all movies, while others rate more conservatively.
+- Mean normalization removes user-specific biases, making it easier to compare users and items.
+- Helps compute similarity metrics (cosine similarity, Pearson correlation) more accurately.
+- Essential for Netflix, Amazon, and YouTube recommendation systems.
+
+### TensorFlow Implementation of Collaborative Filtering
+
+![Day 23 implementation](/images/Day_23_tensorflow_implementation.png)
+
+**Collaborative filtering** is a key technique in recommendation systems, aiming to predict missing user-item interactions based on observed data. Andrew Ng, in the **Machine Learning Specialization**, explains its implementation using **matrix factorization with gradient descent** in TensorFlow. This approach represents users and items as **low-dimensional latent vectors**, where the dot product of these vectors approximates user ratings. The model optimizes embeddings by minimizing the **Mean Squared Error (MSE)** loss, focusing only on known ratings to enhance learning accuracy. Training is conducted using advanced optimizers like **Adam**, iteratively refining embeddings for better predictions. This method is widely applied in industry, including Netflix and Amazon, to personalize user experiences. While matrix factorization is effective, deep-learning-based models such as **Neural Collaborative Filtering (NCF)** offer further improvements by capturing complex user-item relationships.
+
+![Day 23 custom training loop](/images/Day_23_custom_training_loop.png)
+### Finding Related Items
+In recommendation systems, finding related items is an essential task for providing personalized suggestions to users. This typically involves identifying items that are similar to a given item, based on the preferences of users or the characteristics of the items themselves.
+
+Finding related items in **recommendation systems** is a combination of calculating item **_similarity using either item features (content-based) or user interactions (collaborative filtering)_**. Advanced methods like matrix factorization provide a powerful way to uncover latent patterns and improve the relevance of related item recommendations.
+
+![Day 23 finding related item](/images/Day_23_finding_related_item.png)
+
+___
+## Day 24: 
 
 
 
