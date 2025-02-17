@@ -7,13 +7,11 @@ From today onwards, I will make a notes and share ideas what I had learned. The 
 ___
 ## Syllabus to cover
 
-| S.N. | Resources and Books                                                                                                                                                                          | Status |
-|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-|
-| 1.   | [**Machine Learning Specialization: Advance Learning Algorithm**](https://www.coursera.org/learn/advanced-learning-algorithms/home/week/1)                                                   |![✔️](https://img.shields.io/badge/Status-Completed-brightgreen)
- |
-| 2.   | [**Machine Learning Specialization: Unsupervised Learning, Recommenders, Reinforcement Learning**](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning) | |
-| 3.   | [**Neural Network Playlist from 3Blue1Brown**](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)                                                          | ![✔️](https://img.shields.io/badge/Status-Completed-brightgreen)
-|
+| S.N. | Resources                                                                                                                                                                                    | Status                                                           |
+|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| 1.   | [**Machine Learning Specialization: Advance Learning Algorithm**](https://www.coursera.org/learn/advanced-learning-algorithms/home/week/1)                                                   | ![✔️](https://img.shields.io/badge/Status-Completed-brightgreen) |
+| 2.   | [**Machine Learning Specialization: Unsupervised Learning, Recommenders, Reinforcement Learning**](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning) |                                                                  |
+| 3.   | [**Neural Network Playlist from 3Blue1Brown**](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)                                                          | ![✔️](https://img.shields.io/badge/Status-Completed-brightgreen) |
 
 ___
 ## Projects
@@ -650,9 +648,49 @@ Finding related items in **recommendation systems** is a combination of calculat
 ![Day 23 finding related item](/images/Day_23_finding_related_item.png)
 
 ___
-## Day 24: 
+## Day 24: Content-Based Filtering
+Today, I dived into another approach for recommender system. Let's explore about two distinct approach:
 
+**Collaborative Filtering**
+* This approach recommends items based on the **_interactions and preferences_** of other users with similar tastes.
+* It assumes that if two users have **_similar past behavior_**, they will **_likely prefer similar items_** in the future.
+* It is divided into:
+  * **User-based Collaborative Filtering**: Finds similar users and recommends items liked by them.
+  * **Item-based Collaborative Filtering**: Finds similar items based on user interactions and suggests items similar to what the user has interacted with.
+* Example: If User A and User B both like Movie X, and User B also likes Movie Y, then User A is recommended Movie Y.
 
+**Content-Based Filtering**
 
+![Day 24 content based filtering](/images/Day_24_content_base_filtering.png)
+* This approach recommends items based on the **_characteristics of the items and the preferences_** of the user.
+* It relies on item features (e.g., genre, keywords, descriptions) and user profiles.
+* It uses techniques such as **_TF-IDF (Term Frequency-Inverse Document Frequency)_** and **_cosine similarity_** to measure how similar items are to what a user has liked before.
+* Example: If you watch many action movies, the system recommends other action movies with similar features.
 
+Yesterday, we had completely learnt about the collaborative filtering. Today, I had explored content based filtering. Lets deep dive:
 
+The content based filtering consist of two crucial steps:
+They are Retrival and Ranking:
+
+**Step 1: Retrival**
+![Day 24 retrival and ranking](/images/Day_24_retrival_step_1.png)
+The retrieval step focuses on **_selecting a subset of relevant items from a large pool_** of available content. Since searching through an entire catalog can be _**computationally expensive**_, this step efficiently filters down the dataset to a manageable size.
+
+**Step 2: Ranking**
+![Day 24 ranking step](/images/Day_24_ranking_step_2.png)
+Once the retrieval step provides candidate items, the ranking step **_sorts these items in order of relevance to the user_**. A ranking algorithm determines which items are most relevant to the user’s interests.
+
+**Ethical Use of Recommender System:**
+![Day 24 ethical use](/images/Day_24_ethical_use_recommender_system.png)
+
+**Some goals of recommender system:**
+![Day 24 goals of recommender](/images/Day__24_goal_of_recommender_system.png)
+These are the application of recommender system. However, it helps in profit making but should maintain ethnicity.
+
+At last, I learnt about the implementation of **content based filtering** approach using **_Tensorflow framework_**.
+
+![DAy 23 implementation](/images/Day_24_content_bas_filtering_implement.png)
+Will further discuss on implementation in later coming days.
+
+___
+## Day 25: 
