@@ -693,4 +693,22 @@ At last, I learnt about the implementation of **content based filtering** approa
 Will further discuss on implementation in later coming days.
 
 ___
-## Day 25: 
+## Day 25: Principal Component Analysis (PCA)
+
+**Principal Component Analysis (PCA)** is a **_dimensionality reduction technique_** used in data science and machine learning. It transforms a **_high-dimensional dataset_** into a **_lower-dimensional space_** while preserving as much variance (information) as possible.
+
+![Day 25 pca algorithm](/images/Day_25_PCA_algorithm.png)
+
+If we draw the scatter plot between data and using trial and error concept to ensure axes which can **_capture quite a lot of the spread of the data_**. Basically, **PCA** helps to find the **axes** which provides a **_larger variance_** capturing more information of original data with **_few dimensions_**.
+
+Let's look into the below images which show the scikit-learn implementation of PCA algorithm:
+
+![Day 25 scikit learn pca algo](/images/Day_25_pca_in_sklearn.png)
+
+**Code of PCA in scikit-learn:**
+![Day 25 code of PCA](/images/Day_25_code_sklearn.png)
+
+In above, the 2-dimensional dataset is converted into 1-dimensional data which **_describe 0.992 ratio of variance of original data_**.
+
+___
+## Day 26: 
