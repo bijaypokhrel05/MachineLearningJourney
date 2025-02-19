@@ -711,4 +711,17 @@ Let's look into the below images which show the scikit-learn implementation of P
 In above, the 2-dimensional dataset is converted into 1-dimensional data which **_describe 0.992 ratio of variance of original data_**.
 
 ___
-## Day 26: 
+## Day 26: Visualize Decision Tree
+Today, I had revised the decision tree concept and also explored about decision tree visualization using scikit-learn library. `plot_tree` function is used to visualize the tree diagram which gives us a better intuition. I also learned to customize tree diagram using some of the attributes. 
+
+![Day 26 decision tree plot](/images/Day_26_plot_decision_tree.png)
+
+Also explored the one of the important visualization technique i.e. ***pie chart*** using matplotlib library. Here, attributes such as `startangle`, `explode `, `autopct`, `label` and `color` are used for customizing pie chart. For plotting the pie chart, I used builtin dataset named as iris-dataset. 
+
+![Day 26 pie chart](/images/Day_26_pie_chart_iris.png)
+
+I had completed the second last week from the third part of **Machine Learning Specialization**. I will dive deeper to last week i.e. *week 3* from tomorrow onwards. In last part, I will learn about the basic concept related to reinforcement learning.
+
+Today's Notebook: [Practice decision tree session](Day_26_decision_tree_practice)
+___
+## Day 27: 
