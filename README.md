@@ -724,4 +724,33 @@ I had completed the second last week from the third part of **Machine Learning S
 
 Today's Notebook: [Practice decision tree session](Day_26_decision_tree_practice)
 ___
-## Day 27: 
+## Day 27: Introduction of Reinforcement Learning
+
+**What I learnt:** I explored introduction of reinforcement learning and learned some of its terminologies. Also, gain insights on MDP stands for **Markov Decision Process**. All things are describe in detail below:
+
+### Introduction
+
+![Day 25 reinforcement learning](/images/Day_27_reinforcement_learning.png)
+**Reinforcement Learning (RL)** is a type of machine learning where an **_agent learns_** to make decisions by interacting with an **_environment to achieve a goal_**. The agent takes **_actions, receives feedback_** in the form of **rewards**, and updates its strategy to _**maximize cumulative rewards**_ over time.
+
+### Some of the terminologies
+* **Agent** – The learner or decision-maker.
+* **Environment** – The system the agent interacts with.
+* **State (s)** – The current situation of the agent.
+* **Action (a)** – The choices the agent can make.
+* **Reward (r)** – A numerical signal given as feedback.
+* **Policy (π)** – A strategy that maps states to actions.
+
+**Return** - It refers to the **total accumulated reward** an agent receives from a given state until the end of an episode. It is used to evaluate how good a sequence of actions is.
+
+![Day 27 return on RL](/images/Day_27_return_on_RL.png)
+
+### Markov Decision Process:
+![Day 27 mdp](/images/Day_27_markov_decision_process.png)
+
+A **Markov Decision Process** (MDP) is a **mathematical framework** used to model decision-making problems where outcomes are partly random and partly under the control of an agent. MDPs are widely used in **Reinforcement Learning (RL)** to model the interaction between an agent and an environment.
+
+___
+## Day 28: 
+
+
