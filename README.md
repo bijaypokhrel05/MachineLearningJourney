@@ -751,6 +751,43 @@ ___
 A **Markov Decision Process** (MDP) is a **mathematical framework** used to model decision-making problems where outcomes are partly random and partly under the control of an agent. MDPs are widely used in **Reinforcement Learning (RL)** to model the interaction between an agent and an environment.
 
 ___
-## Day 28: 
+## Day 28: State Action Value Function
+The state value function, denoted as `V(s)`, _**measures how good it is for an agent to be in a particular state**_ `s` while following a specific policy `π`.
+
+Formally, the state value function is the **expected total reward** an agent can obtain starting from state `s` and following policy `π` thereafter.
+
+![Day 28 state action value function](/images/Day_28_state_action_value_function.png)
+
+- `Q(s, a)` = Return if you
+     - start in state s
+     - take action `a` (once)
+     - then behave optimally after that
+
+where, <br>
+`s`: current state<br>
+`a`: current action<br>
+`R(s)`: reward of current state<br>
+`s'`: state you get to after taking action a.<br>
+`a'`: action that you take in state `s'`.
+
+### Bellman Equation
+![Day 28 bellman equation](/images/Day_28_bellman_equation.png)
+The **state-action value function** already tells us how good an action is in a given state, so why Bellman equation needed.
+
+_Here's some reasons:_
+* Instead of estimating values from scratch, the Bellman equation breaks the problem into smaller parts.
+* It tells us that the value of a state/action depends on immediate rewards + future values.
+* The Bellman equation helps update values over time as the agent explores new states and so on.
+
+At terminal state, `Q(s, a)` = `R(s)`
+
+
+**Conclusion**
+- The Bellman equation is a _**recursive formula that helps in decision-making**_.
+- It breaks down a problem into smaller sub-problems, making it easier for RL agents to learn.
+- It forms the basis of many RL algorithms like **Q-learning and Deep RL**.
+
+___
+## Day 29: 
 
 
