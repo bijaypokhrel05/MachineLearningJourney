@@ -788,6 +788,34 @@ At terminal state, `Q(s, a)` = `R(s)`
 - It forms the basis of many RL algorithms like **Q-learning and Deep RL**.
 
 ___
-## Day 29: 
+## Day 29: Continuous State Space, Deep Reinforcement Learning
+
+Previously, I explored on single state, one state at a time for finding current state action value function. Also, explored on discrete state which only takes **quantized value**. The state could be +ve integer number. Today, I dived into the continuous state which contains position, speeds and twist of particular object. They are **written collectively in the form of vector** which contain different attributes ase mention in above.
+
+I understand continuous state using some of the real world based project such as **autonomous helicopter**, **lunar lander**. Mostly, **Andrew Ng** explain this section with the help of lunar lander project.
+
+For lunar lander, state is a vector which contains 8 dimension vector such as x-position, y-position, change in x-position, change in y-position, twist/rotation and change in rotation. And lastly, contain two boolean element of vector named as l and r. This attributes l and r show the lunar lander left legs and right legs touches or not on the surface respectively. This lunar lander contain actions such as nothing, left, main, right based on producing trust in particular direction.
+
+![Day 29 learning algorithm](/images/Day_29_learning_algorithm_reinforce.png)
+
+### Deep Reinforcement Learning
+This reinforcement learning can be implemented with the help of neural network. However, it is not optimized and can enhance optimization using output layers contain 4 nodes instead of using 1. For that, input doesn't contain actions.
+
+![Day 29 reinforcement learning](/images/Day_29_reinforcement_deep_learning.png)
+
+![Day 29 q-learning](/images/Day_29_q-learning.png)
+- Algorithm can be refined using **mini-batch gradient** and **soft updates**.
+
+### Limitation of Reinforcement Learning
+1. Much easier to ge to work in a simulation than a real robot.
+2. Far fewer applications than supervised and unsupervised learning.
+3. But ... **_exciting research direction with potential for future applications_**.
+
+Finally, learning all these stuff comes to an end. I had completed **Machine Learning Specialization** after learning some of the ideas behind the reinforcement learning in last week of this session. However, I will continue on working some of the projects and revised all this stuffs for the better understanding. 
+
+___
+
+
+
 
 
