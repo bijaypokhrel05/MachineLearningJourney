@@ -10,16 +10,16 @@ ___
 | S.N. | Resources                                                                                                                                                                                    | Status                                                           |
 |------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | 1.   | [**Machine Learning Specialization: Advance Learning Algorithm**](https://www.coursera.org/learn/advanced-learning-algorithms/home/week/1)                                                   | ![✔️](https://img.shields.io/badge/Status-Completed-brightgreen) |
-| 2.   | [**Machine Learning Specialization: Unsupervised Learning, Recommenders, Reinforcement Learning**](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning) |                                                                  |
+| 2.   | [**Machine Learning Specialization: Unsupervised Learning, Recommenders, Reinforcement Learning**](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning) |  ![✔️](https://img.shields.io/badge/Status-Completed-brightgreen)                                                                |
 | 3.   | [**Neural Network Playlist from 3Blue1Brown**](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)                                                          | ![✔️](https://img.shields.io/badge/Status-Completed-brightgreen) |
 
 ___
 ## Projects
 
 
-| S.N. | Projects Title | Status |
-|------|----------------|--------|
-| 1.   | Updated soon   |        |
+| S.N. | Projects Title                                                                         | Status |
+|------|----------------------------------------------------------------------------------------|--------|
+| 1.   | [Email/SMS spam detection](https://github.com/bijaypokhrel05/Email-SMS-Spam-Detection) |   ![✔️](https://img.shields.io/badge/Status-Completed-brightgreen)     |
 
 ___
 ## Day 1: Neural Network Basic
